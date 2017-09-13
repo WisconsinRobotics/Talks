@@ -37,3 +37,5 @@ control you selected in the XAML code.
 Of course, the controls shown are not exhaustive. These were chosen since they
 are pretty commonly used. You can also make your own! That's covered in the 
 [User Controls](04-user-controls) tutorial.
+
+![ControlShowcase.png](ControlShowcase.png)
