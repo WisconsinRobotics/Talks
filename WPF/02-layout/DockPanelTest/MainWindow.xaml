@@ -1,0 +1,17 @@
+﻿<Window x:Class="DockPanelTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DockPanelTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel>
+        <!-- Try rearranging and adding more buttons (e.g. another one at @ top) -->
+        <Button DockPanel.Dock="Top">Top</Button>
+        <Button DockPanel.Dock="Left">Left</Button>
+        <Button DockPanel.Dock="Right">Right</Button>
+        <Button DockPanel.Dock="Bottom">Bottom</Button>
+        <Button>Center</Button>
+    </DockPanel>
+</Window>
