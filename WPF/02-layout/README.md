@@ -42,6 +42,15 @@ Let's look at an example:
 The above specifies a 2x2 grid of equal proportions, and places a button
 in the top left corner as well as another grid right under it.
 
+There are various ways to specify the size of a row or column:
+* Relative sizes (the `*` notation). If you have 2 columns with sizes `3*` and `7*`, column 0 would take 30% (3 / (3 + 7)) of the size and column 1 70%.
+* Absolute sizes - a pixel value for the element. Don't use this if you want stuff
+to expand with the size of your window. (Sometimes you don't, but those cases are
+special or rare)
+* Automatic sizes - specified by putting `auto` in the Width or Height attribute. 
+This tells WPF to let make this row or column as big as the child elements need to
+be, and no more. 
+
 It's pretty easy to use. Specify the number of rows and columns you need via
 the `Grid.RowDefinitions` and `Grid.ColumnDefinitions` tags, and then
 assign coordinates to child elements. You can also have subgrids as well!
@@ -53,15 +62,6 @@ Let (x, y) mean (row, col):
 | ------ | -----  |
 | (1, 0) | (1, 1) |
 
-### Size Techniques
-There are various ways to specify the size of a row or column:
-* Relative sizes (the `*` notation). If you have 2 columns with sizes `3*` and `7*`, column 0 would take 30% (3 / (3 + 7)) of the size and column 1 70%.
-* Absolute sizes - a pixel value for the element. Don't use this if you want stuff
-to expand with the size of your window. (Sometimes you don't, but those cases are
-special or rare)
-* Automatic sizes - specified by putting `auto` in the Width or Height attribute. 
-This tells WPF to let make this row or column as big as the child elements need to
-be, and no more. 
 
 ## StackPanel
 If you just want to list controls in one direction, then the StackPanel is what
