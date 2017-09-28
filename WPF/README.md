@@ -1,7 +1,7 @@
 Introduction to WPF
 ===================
 
-Windows Presentation Froundation (WPF) is a Microsoft Windows specific graphical user interface (GUI) toolkit.
+Windows Presentation Foundation (WPF) is a Microsoft Windows specific graphical user interface (GUI) toolkit.
 Wisconsin Robotics uses it to build its base station interface, as seen below.
 
 ![ascent-rocks.png](ascent-rocks.png)
